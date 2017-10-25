@@ -224,7 +224,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <label for="exampleInputEmail1">國民身分證統一編號</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="A123456789">
                       </div>
-                      <button type="submit" class="btn btn-xs btn-info">身分證統一編號填寫說明</button>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-xs btn-info">身分證統一編號填寫說明</button>
+                      </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
@@ -251,20 +253,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <label for="exampleInputEmail1">結婚日期</label>
                     </div>
                     <div class="col-md-4">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsMerryYears">106 年 12 月 31 日前結婚
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsMerryYears">106 年登記結婚
-                        </label>
+                      <div class="form-group">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsMerryYears">106 年 12 月 31 日前結婚
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsMerryYears">106 年登記結婚
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-8">
-                      <div class="alert alert-warning">
-                        106 年度結婚或離婚登記之夫妻，可選擇合併或分開申報。填寫配偶資料及表合併申報，配偶所得亦應匯入申報。
+                    <div class="col-md-4">
+
+                      <div class="form-group">
+                        <div class="text-red">
+                          106 年度結婚或離婚登記之夫妻，可選擇合併或分開申報。填寫配偶資料及表合併申報，配偶所得亦應匯入申報。
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -296,6 +303,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="form-group">
                         <label for="optionsMerryYears">非上述情形，而無法合併申報之夫妻分居（不包含因工作因素分隔兩地或是戶籍不同等情形）</label>
                       </div>
+                      <div class="form-group">
                         <div class="radio-inline">
                           <label>
                             <input type="radio" name="optionsMerryYears3">是
@@ -306,10 +314,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <input type="radio" name="optionsMerryYears3">否
                           </label>
                         </div>
+                      </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <div class="alert alert-warning">
+                        <div class="text-red">
                           任一項選擇「是」者，下一年度配偶、受扶養親屬之所得及扣除額分別提供。
                         </div>
                       </div>
