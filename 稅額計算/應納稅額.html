@@ -20,6 +20,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
         .box-header {
             text-align: center;
         }
+        .box.box-solid>.box-body {
+            color: #444;
+            background: #d2d6de;
+            background-color: #d2d6de;
+        }
+        .box.box-solid.box-default>.box-header {
+            color: #000;
+            background: #fff;
+            background-color: #fff;
+        }
+        .box-header .box-title {
+            font-weight: 600;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -78,36 +92,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </span>
                         </a>
                     </li>
-                    <li class="treeview menu-open active">
+                    <li class="treeview">
                         <a href="#">
                             <i class="fa fa-link"></i>
                             <span>填寫扣除額</span>
                             <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
+                                <i class="fa fa-angle-left pull-right" style=" visibility: hidden; "></i>
+                                <small class="label pull-right bg-green">完成</small>
                             </span>
                         </a>
-                        <ul class="treeview-menu" style="display: block;">
-                            <li class="active">
+                        <ul class="treeview-menu">
+                            <li>
                                 <a href="/填寫扣除額/一般扣除額.html">一般扣除額</a>
+                                <small class="label pull-right bg-green">完成</small>
                             </li>
                             <li>
                                 <a href="/填寫扣除額/特別扣除額.html">特別扣除額</a>
+                                <small class="label pull-right bg-green">完成</small>
                             </li>
                             <li>
                                 <a href="/填寫扣除額/投資抵減稅額.html">投資抵減稅額</a>
+                                <small class="label pull-right bg-green">完成</small>
                             </li>
                             <li>
                                 <a href="/填寫扣除額/重購自用住宅.html">重購自用住宅</a>
+                                <small class="label pull-right bg-green">完成</small>
                             </li>
                             <li>
                                 <a href="/填寫扣除額/大陸地區所得扣抵.html">大陸地區所得扣抵</a>
+                                <small class="label pull-right bg-green">完成</small>
                             </li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="treeview">
                         <a href="/填寫基本稅額/填寫基本稅額.html">
                             <i class="fa fa-link"></i>
                             <span>填寫基本稅額</span>
+                            <small class="label pull-right bg-green">完成</small>
                         </a>
                     </li>
                     <li class="treeview">
@@ -164,7 +185,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <ol class="breadcrumb">
                     <li>
                         <a href="#">
-                            <i class="fa fa-dashboard"></i>應納稅額計算</a>
+                            <i class="fa fa-dashboard"></i>稅額計算</a>
                     </li>
                     <li class="active">應納稅額計算</li>
                 </ol>
@@ -196,7 +217,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <div class="col-md-4 col-sm-4">
                                 <div class="box box-solid box-default">
                                     <div class="box-header">
-                                        <h3 class="box-title">200,000</h3>
+                                        <h3 class="box-title">200,000,000,000,000</h3>
                                     </div><!-- /.box-header -->
                                     <div class="box-body">
                                         <p>基本稅額</p>
