@@ -17,6 +17,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="../dist/css/skins/skin-black-light.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    .two-row {
+      margin: 4px;
+    }
+
+    .one-row {
+      margin: 14px;
+    }
+  </style>
 </head>
 
 <body class="hold-transition skin-black-light sidebar-mini">
@@ -33,6 +42,37 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
           <span class="sr-only">Toggle navigation</span>
         </a>
+        <div class="">
+          <span class="pull-right">
+            <div class="two-row">總稅額</div>
+            <div class="two-row">1,000</div>
+          </span>
+          <span class="one-row pull-right">＝</span>
+          <span class="one-row pull-right">)</span>
+          <span class="pull-right">
+            <div class="two-row">採用算式</div>
+            <div class="two-row">第三式</div>
+          </span>
+
+          <span class="one-row pull-right">(</span>
+          <span class="pull-right">
+              <div class="two-row">減項</div>
+              <div class="two-row">1,000</div>
+            </span>
+            <span class="one-row pull-right">−</span>
+
+          <span class="pull-right">
+              <div class="two-row">加項</div>
+              <div class="two-row">1,000</div>
+            </span>
+            <span class="one-row pull-right">＋</span>
+            <span class="pull-right">
+                <div class="two-row">基本稅額</div>
+                <div class="two-row">1,000</div>
+              </span>
+        </div>
+
+
       </nav>
     </header>
 
@@ -165,16 +205,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="box">
           <div class="box-header with-border">
             <div class="">
-                <h2 class="box-title" style="margin:6px">
-                    填寫所得
-                  </h2>
-                  <div class="pull-right box-tools">
-                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-default">
-                      新增所得資料
-                    </button>
-                  </div>
+              <h2 class="box-title" style="margin:6px">
+                填寫所得
+              </h2>
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-default">
+                  新增所得資料
+                </button>
+              </div>
             </div>
-            
+
 
           </div>
 
