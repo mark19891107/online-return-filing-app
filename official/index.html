@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>綜合所得稅電子結算申報繳稅系統</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../dist/css/skins/skin-black-light.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <style>
+        .flex-header {
+            height: 80px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .with-border {
+            border-bottom: solid 1px #f4f4f4;
+        }
+
+        .bg {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body class="hold-transition" style="background-color: #ecf0f5;">
+    <div style="margin: 7% auto;text-align:center">
+        <div class="register-logo">
+            <label>綜合所得稅電子結算申報繳稅系統</label>
+            <p>請選擇身份驗證方式</p>
+        </div>
+
+        <div class="container">
+            <div class="col-sm-6 col-md-3">
+                <div class="box box-warning">
+                    <div class="box-header with-border  bg-yellow">
+                        <h3 class="box-title flex-header">健保卡＋註冊密碼</h3>
+                    </div>
+                    <div class="box-body with-border bg">
+                        健保卡
+                    </div>
+                    <div class="box-body with-border">
+                        讀卡機
+                    </div>
+                    <div class="box-body with-border bg">
+                        <span class="text-green">可下載所得及扣除額資料</span>
+                    </div>
+                    <div class="box-footer">
+                        <a href="/系統檢查.html">
+                            <button class="btn btn-warning">用這個方式身份驗證</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-left margin">
+                    <a href="">如何取得註冊密碼？</a>
+                    <br>
+                    <a href="">忘記註冊密碼怎麼辦？</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box box-success">
+                    <div class="box-header with-border  bg-green">
+                        <h3 class="box-title flex-header">自然人憑證</h3>
+                    </div>
+                    <div class="box-body with-border bg">
+                        自然人憑證卡
+                    </div>
+                    <div class="box-body with-border">
+                        讀卡機
+                    </div>
+                    <div class="box-body with-border bg">
+                        <span class="text-green">可下載所得及扣除額資料</span>
+                    </div>
+                    <div class="box-footer">
+                        <a href="/系統檢查.html">
+                            <button class="btn btn-success">用這個方式身份驗證</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-left margin">
+                    <a href="">如何取得自然人憑證？</a>
+                    <br>
+                    <a href="">忘記 PIN 碼怎麼辦？</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box box-danger">
+                    <div class="box-header with-border bg-red">
+                        <h3 class="box-title flex-header">金融憑證</h3>
+                    </div>
+                    <div class="box-body with-border bg">
+                        金融憑證
+                    </div>
+                    <div class="box-body with-border">
+                        憑證密碼
+                    </div>
+                    <div class="box-body with-border bg">
+                        <span class="text-green">可下載所得及扣除額資料</span>
+                    </div>
+                    <div class="box-footer">
+                        <a href="/系統檢查.html">
+                            <button class="btn btn-danger">用這個方式身份驗證</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-left margin">
+                    <a href="">如何取得金融憑證？</a>
+                    <br>
+                    <a href="">忘記憑證密碼怎麼辦？</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="box box-info">
+                    <div class="box-header with-border  bg-aqua">
+                        <h3 class="box-title flex-header">戶口名簿戶號＋查詢碼</h3>
+                    </div>
+                    <div class="box-body with-border bg">
+                        戶口名簿戶號
+                    </div>
+                    <div class="box-body with-border">
+                        查詢碼
+                    </div>
+                    <div class="box-body with-border bg">
+                        <div class="text-green">可下載所得及扣除額資料（戶號＋查詢碼）</div>
+                        <div class="text-red">手動輸入所得資料（戶號+IDN）</div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="/系統檢查.html">
+                            <button class="btn btn-info">用這個方式身份驗證</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-left margin">
+                    <a href="">戶號是什麼？</a>
+                    <br>
+                    <a href="">如何取得查詢碼？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.register-box -->
+
+    <!-- jQuery 3 -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="../plugins/iCheck/icheck.min.js"></script>
+
+
+</body>
+
+</html>

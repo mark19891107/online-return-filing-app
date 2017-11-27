@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>綜合所得稅電子結算申報繳稅系統</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="../dist/css/skins/skin-black-light.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <style>
+        .two-row {
+            padding: 2px 10px;
+            text-align: center;
+        }
+
+        .one-row {
+            padding: 14px;
+        }
+
+        .strong {
+            font-weight: 700;
+            color: #0066FF;
+        }
+
+        .flow-btn button {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="" class="logo">
+                <span class="logo-mini">報稅</span>
+                <span class="logo-lg">綜合所得稅申報</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-gear"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-save"></i> 存檔
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-edit"></i> 修改密碼
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-book"></i> 操作手冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i> 登出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <span class="pull-right">
+                        <div class="two-row strong">應繳（退）稅額</div>
+                        <div class="two-row">10,000,000,000,000</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">最佳計算式</div>
+                        <div class="two-row">第三式</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">扣除額免稅額</div>
+                        <div class="two-row">1,000</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">所得總額</div>
+                        <div class="two-row">1,000</div>
+                    </span>
+
+
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">報稅流程</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟一、填寫基本資料</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/填寫基本資料/本人及配偶.html">1. 本人及配偶
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫基本資料/撫養親屬.html">2. 扶養親屬
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/填寫所得/填寫所得.html">
+                            <i class="fa fa-link"></i>
+                            <span>步驟二、填寫所得</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right" style=" visibility: hidden; "></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview menu-open active">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟三、填寫扣除額、扣抵稅額</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu" style="display: block;">
+                            <li class="active">
+                                <a href="/填寫扣除額/一般扣除額.html">1. 一般扣除額</a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/特別扣除額.html">2. 特別扣除額</a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/投資抵減稅額.html">3. 投資抵減稅額</a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/重購自用住宅.html">4. 重購自用住宅</a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/大陸地區所得扣抵.html">5. 大陸地區所得稅扣抵</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="/填寫基本稅額/填寫基本稅額.html">
+                            <i class="fa fa-link"></i>
+                            <span>步驟四、填寫基本稅額</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟五、稅額計算</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/稅額計算/應納稅額.html">1. 應納稅額</a>
+                            </li>
+                            <li>
+                                <a href="/稅額計算/基本稅額.html">2. 基本稅額</a>
+                            </li>
+                            <li>
+                                <a href="/稅額計算/應繳退稅額.html">3. 應繳（退）稅額</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟六、申報上傳</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/申報上傳/繳退稅.html">1. 繳（退）稅</a>
+                            </li>
+                            <li>
+                                <a href="/申報上傳/上傳及列印.html">2. 上傳及列印</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>
+                    一般扣除額
+                    <small></small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>填寫扣除額、扣抵稅額</a>
+                    </li>
+                    <li class="active">一般扣除額</li>
+                </ol>
+            </section>
+            <section class="content container-fluid">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#menu1">扣除額資料</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#menu2">填寫一般扣除額/列舉扣除額</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="menu1" class="tab-pane fade in active">
+                                        <div class="box box-default">
+                                            <div class="box-body">
+                                                <div class="row">
+                                                    <form class="form-horizontal">
+                                                        <div class="box-body input-listener">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3"></label>
+                                                                <div class="col-sm-2">
+                                                                    <button class="btn btn-default" style="width: 100%;">實際發生金額</button>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <button class="btn btn-default" style="width: 100%;">可扣除金額</button>
+                                                                </div>
+                                                                <div class="col-md-1">
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">捐贈</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">人身保險費、非健保之保費</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">人身保險費、健保費</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">醫藥及生育費</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">災害損失</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">＊自用住宅購屋借款利息</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">＊房屋租金支出</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">依政治獻金法對擬參選人之捐贈</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">依政治獻金法對政黨之捐贈</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">依政治獻金法對政治團體之捐贈</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">依公職人員選罷法規定候選人之競選經費</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">私立學校法第62條規定之捐贈</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">依總統副總統選罷法規定候選人之競選經費</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <button class="btn btn-default">說明</button>
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">＊小計</label>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4">
+                                                                    <p class="" style="margin-bottom: 0px;">
+                                                                        <strong>＊(小計說明)：</strong>
+                                                                    </p>
+                                                                    <p class="text-red" style="margin-bottom: 0px;">
+                                                                        購屋借款利息與房屋租金支出，如分別符合列
+                                                                    </p>
+                                                                    <p class="text-red" style="margin-bottom: 0px;">
+                                                                        舉扣除要件，且費用支出期間不重複之下，可
+                                                                    </p>
+                                                                    <p class="text-red" style="margin-bottom: 0px;">
+                                                                        按費用支出時間占全年比例分別計算及列報扣
+                                                                    </p>
+                                                                    <p class="text-red" style="margin-bottom: 0px;">
+                                                                        除限額，並分別列報扣除
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                        <div class="box box-default">
+                                            <div class="box-header with-border">
+                                                <div class="">
+                                                    <h2 class="box-title" style="margin:6px">
+                                                    </h2>
+                                                    <div class="pull-right box-tools">
+                                                        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-default">
+                                                            新增資料
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="15%">列舉扣除種類</th>
+                                                                    <th width="15%">姓名</th>
+                                                                    <th width="10%">實際發生金額</th>
+                                                                    <th width="17%">所有權人或出租人或出售人姓名</th>
+                                                                    <th width="17%">所有權人或出租人或出售人統一編號</th>
+                                                                    <th width="17%">房屋取得日期或房屋稅籍編號或金額</th>
+                                                                    <th width="9%">操作</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>XXXX</td>
+                                                                    <td>王先生</td>
+                                                                    <td>$123,345</td>
+                                                                    <td>王先生</td>
+                                                                    <td>54319753</td>
+                                                                    <td>2000/10/06</td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default-edit">
+                                                                            <i class="fa fa-edit"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-danger  btn-sm">
+                                                                            <i class="fa fa-trash-o"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>XXXX</td>
+                                                                    <td>林小姐</td>
+                                                                    <td>$123,345</td>
+                                                                    <td>林小姐</td>
+                                                                    <td>58319753</td>
+                                                                    <td>B51230000005</td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default-edit">
+                                                                            <i class="fa fa-edit"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-danger  btn-sm">
+                                                                            <i class="fa fa-trash-o"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>XXXX</td>
+                                                                    <td>張先生</td>
+                                                                    <td>$123,345</td>
+                                                                    <td>林小姐</td>
+                                                                    <td>53319753</td>
+                                                                    <td>
+                                                                        $123,456
+                                                                    </td>
+                                                                    <td>
+                                                                        <button type="button" class="btn btn-default btn-sm">
+                                                                            <i class="fa fa-edit"></i>
+                                                                        </button>
+                                                                        <button type="button" class="btn btn-danger  btn-sm">
+                                                                            <i class="fa fa-trash-o"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flow-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-success">存檔</button>
+                        <a href="/填寫扣除額/特別扣除額.html">
+                            <button type="button" class="btn margin btn-primary">下一步</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 新增扣除額 dialog[start] -->
+            <div class="modal fade" id="modal-default">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title">新增扣除額資料</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="deductModal_irc05_flgDeduct" id="deductModal_irc05_flgDeduct0" value="0" onclick="irx.deductModal.showStandardDeduct();"
+                                                        checked>使用標準扣除
+                                                </label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="deductModal_irc05_flgDeduct" id="deductModal_irc05_flgDeduct1" value="1" onclick="irx.deductModal.showItemizedDeduct();"> 使用列舉扣除
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="text-red">
+                                                    使用標準扣除額者：單身90,000，夫妻合併180,000
+                                                    <br /> 使用列舉扣除額者：請輸入各項列舉金額
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>列舉扣除種類</label>
+                                            <select id="deductModal_irc05_dedTp" class="form-control" tax-rule='dedTp.列舉扣除種類.idn'>
+                                                <option>請選擇</option>
+                                            </select>
+                                            <button type="button" id="deductLoanModalShow" class="btn btn-success" style="display: none;" data-toggle="modal" data-target="#deductLoanModal">
+                                                顯示可申報扣除之借款明細資料</button>
+                                            <div id="deductModal_dedTp_message" class="text-red"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>姓名</label>
+                                            <select id="deductModal_irc05_idn" class="form-control" tax-rule='name.姓名'>
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="deductModal_irc05_amt">實際發生金額</label>
+                                            <input type="text" class="form-control " id="deductModal_irc05_amt" placeholder="實際發生金額" maxlength="10" tax-rule='amt.實際發生金額'
+                                                tax-type="number" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row" id="deductModalDeductAmtDiv" style="display: none;">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>可扣除金額</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_deductAmt" placeholder="可扣除金額" maxlength="14" tax-rule='deductAmt.可扣除金額'
+                                                tax-ignore-check='Y' tax-type="number" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandlordNmDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label id="deductModalLandlordNmLabel">出售人姓名</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landlordNm" placeholder="出售人姓名" maxlength="10" tax-rule='landlordNm.出售人姓名'
+                                                tax-ignore-check='Y' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandlordIdnDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label id="deductModalLandlordIdnLabel">統一編號或身份證統一編號</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landlordIdn" placeholder="統一編號或身份證統一編號" maxlength="10" onkeyup="this.value=this.value.toUpperCase();"
+                                            />
+                                            <!-- tax-rule='landlordIdn.統一編號或身份證統一編號' tax-ignore-check='Y' -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRecerNmDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <label>受贈人名稱</label>
+                                        <input type="text" class="form-control" id="deductModal_irc05_recerNm" placeholder="受贈人名稱" maxlength="30" tax-rule='recerNm.受贈人姓名'
+                                            tax-ignore-check='Y' />
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRecerBanDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+
+                                            <label>受贈人統一編號</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_recerBan" placeholder="受贈人統一編號" maxlength="8" style="ime-mode: disabled; text-transform: uppercase;"
+                                            />
+                                            <!-- tax-rule='recerBan.受贈人統一編號' tax-ignore-check='Y'  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandNoDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+
+                                            <label>金額</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landNo" placeholder="金額" maxlength="7" tax-rule='landNo.金額'
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <font class="text-red" id="deductModalMsgHouDateDiv" style="display: none;"> 請輸入民國年(三位)月日，例:0940505</font>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRentDateDiv" style="display: none;">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label>承租期間[起] </label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_rentStartDate" placeholder="承租期間[起]" maxlength="7" tax-rule="isNotEmpty"
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <font class="text-red">請輸入民國年(三位)月日，例:0940505
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label>承租期間[止] </label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_rentEndDate" placeholder="承租期間[止]" maxlength="7" tax-rule="isNotEmpty"
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <div class="form-group">
+                                                <label>
+                                                    <input type="checkbox" id="deductModal_irc05_landReg" tax-transform="yesNoCheckbox" value='1'>
+                                                    <font class="text-red"> 已辦理戶籍登記勾選</font>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalLandCodeDiv" style="display: none;">
+                                    <div class=" col-md-10 ">
+                                        <div class="form-group">
+                                            <label>承租房屋坐落地址</label>
+                                        </div>
+                                    </div>
+                                    <div class="  col-md-3  ">
+                                        <div class="form-group">
+                                            <label>縣/市</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landHsn" tax-rule="hsn.[承租房屋坐落縣市]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="    col-md-3   ">
+                                        <div class="form-group">
+
+                                            <label>鄉/鎮/市/區</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landTown" name="" tax-rule="town.[承租房屋坐落區市鄉鎮]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+
+                                            <label>村/里</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landVill" tax-rule="vill.[承租房屋坐落村里]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalLandAddDiv" style="display: none;">
+                                    <div class="    col-md-10  ">
+                                        <div class="form-group">
+                                            <label>房屋坐落地址</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landAdd" placeholder="房屋坐落地址" maxlength="360" tax-rule='landAdd.房屋坐落地址'
+                                                tax-ignore-check='Y' />
+                                            <br>
+                                            <button type="button" id="deductModalCopyAddr" class="btn btn-success" style="display: none;" onclick='irx.deductModal.copyAddr();'>同戶籍地址</button>
+                                            &nbsp;
+                                            <button type="button" id="deductModalCopyComuAddr" class="btn btn-success" style="display: none;" onclick='irx.deductModal.copyComuAddr();'>同通訊地址</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalFlgNotproveDiv" style="display: none;">
+                                    <div class="  col-md-12 ">
+                                        <div class="form-group">
+                                            醫藥和生育費用，以給付與公立醫院、全民健康保險特約醫院及診所或經財政部認定其會計紀錄完備正確的醫院為限，
+                                            <br /> 請以上方「實際發生金額」減除退費、受領保險給付及非屬醫療性質(例：醫學美容) 部分後之餘額填列「可扣除金額」。
+                                            <br />
+                                            <input type="checkbox" id="deductModal_irc05_flgNotprove" tax-transform="yesNoCheckbox" value='Y'> 所列實際發生金額，含應另行檢附診斷證明書 (例：因牙病所為鑲牙、假牙製作及齒列矯正之醫療費用支出)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-red" id="deductModalMsgDisLossDiv" style="display: none;">
+                                    <div class="    col-md-12  ">
+                                        <div class="form-group">
+                                            如受有保險賠償或救濟金，請以上方之「實際發生金額」減除賠償或救濟金後之餘額填列「可扣除金額」</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="checkbox-inline margin" style=" margin-top: 13px; ">
+                                <label>
+                                    <input type="checkbox" name="optionsYears">新增後清除表單資料
+                                </label>
+                            </div>
+                            <button class="btn btn-success">新增</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+            <!-- 修改一般扣除額 dialog[start] -->
+            <div class="modal fade" id="modal-default-edit">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title">修改扣除額資料</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="deductModal_irc05_flgDeduct" id="deductModal_irc05_flgDeduct0" value="0" onclick="irx.deductModal.showStandardDeduct();"
+                                                        checked>使用標準扣除
+                                                </label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="deductModal_irc05_flgDeduct" id="deductModal_irc05_flgDeduct1" value="1" onclick="irx.deductModal.showItemizedDeduct();"> 使用列舉扣除
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="text-red">
+                                                    使用標準扣除額者：單身90,000，夫妻合併180,000
+                                                    <br /> 使用列舉扣除額者：請輸入各項列舉金額
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>列舉扣除種類</label>
+                                            <select id="deductModal_irc05_dedTp" class="form-control" tax-rule='dedTp.列舉扣除種類.idn'>
+                                                <option>請選擇</option>
+                                            </select>
+                                            <button type="button" id="deductLoanModalShow" class="btn btn-success" style="display: none;" data-toggle="modal" data-target="#deductLoanModal">
+                                                顯示可申報扣除之借款明細資料</button>
+                                            <div id="deductModal_dedTp_message" class="text-red"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>姓名</label>
+                                            <select id="deductModal_irc05_idn" class="form-control" tax-rule='name.姓名'>
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="deductModal_irc05_amt">實際發生金額</label>
+                                            <input type="text" class="form-control " id="deductModal_irc05_amt" placeholder="實際發生金額" maxlength="10" tax-rule='amt.實際發生金額'
+                                                tax-type="number" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ROW -->
+                                <div class="row" id="deductModalDeductAmtDiv" style="display: none;">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>可扣除金額</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_deductAmt" placeholder="可扣除金額" maxlength="14" tax-rule='deductAmt.可扣除金額'
+                                                tax-ignore-check='Y' tax-type="number" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandlordNmDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label id="deductModalLandlordNmLabel">出售人姓名</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landlordNm" placeholder="出售人姓名" maxlength="10" tax-rule='landlordNm.出售人姓名'
+                                                tax-ignore-check='Y' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandlordIdnDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label id="deductModalLandlordIdnLabel">統一編號或身份證統一編號</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landlordIdn" placeholder="統一編號或身份證統一編號" maxlength="10" onkeyup="this.value=this.value.toUpperCase();"
+                                            />
+                                            <!-- tax-rule='landlordIdn.統一編號或身份證統一編號' tax-ignore-check='Y' -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRecerNmDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <label>受贈人名稱</label>
+                                        <input type="text" class="form-control" id="deductModal_irc05_recerNm" placeholder="受贈人名稱" maxlength="30" tax-rule='recerNm.受贈人姓名'
+                                            tax-ignore-check='Y' />
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRecerBanDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+
+                                            <label>受贈人統一編號</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_recerBan" placeholder="受贈人統一編號" maxlength="8" style="ime-mode: disabled; text-transform: uppercase;"
+                                            />
+                                            <!-- tax-rule='recerBan.受贈人統一編號' tax-ignore-check='Y'  -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalLandNoDiv" style="display: none;">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+
+                                            <label>金額</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landNo" placeholder="金額" maxlength="7" tax-rule='landNo.金額'
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <font class="text-red" id="deductModalMsgHouDateDiv" style="display: none;"> 請輸入民國年(三位)月日，例:0940505</font>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="deductModalRentDateDiv" style="display: none;">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label>承租期間[起] </label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_rentStartDate" placeholder="承租期間[起]" maxlength="7" tax-rule="isNotEmpty"
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <font class="text-red">請輸入民國年(三位)月日，例:0940505
+                                            </font>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+
+                                            <label>承租期間[止] </label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_rentEndDate" placeholder="承租期間[止]" maxlength="7" tax-rule="isNotEmpty"
+                                                tax-ignore-check='Y' tax-type="number" />
+                                            <div class="form-group">
+                                                <label>
+                                                    <input type="checkbox" id="deductModal_irc05_landReg" tax-transform="yesNoCheckbox" value='1'>
+                                                    <font class="text-red"> 已辦理戶籍登記勾選</font>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalLandCodeDiv" style="display: none;">
+                                    <div class=" col-md-10 ">
+                                        <div class="form-group">
+                                            <label>承租房屋坐落地址</label>
+                                        </div>
+                                    </div>
+                                    <div class="  col-md-3  ">
+                                        <div class="form-group">
+                                            <label>縣/市</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landHsn" tax-rule="hsn.[承租房屋坐落縣市]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="    col-md-3   ">
+                                        <div class="form-group">
+
+                                            <label>鄉/鎮/市/區</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landTown" name="" tax-rule="town.[承租房屋坐落區市鄉鎮]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+
+                                            <label>村/里</label>
+                                            <select class="form-control " tax-transform="addr" id="deductModal_irc05_landVill" tax-rule="vill.[承租房屋坐落村里]">
+                                                <option>請選擇</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalLandAddDiv" style="display: none;">
+                                    <div class="    col-md-10  ">
+                                        <div class="form-group">
+                                            <label>房屋坐落地址</label>
+                                            <input type="text" class="form-control" id="deductModal_irc05_landAdd" placeholder="房屋坐落地址" maxlength="360" tax-rule='landAdd.房屋坐落地址'
+                                                tax-ignore-check='Y' />
+                                            <br>
+                                            <button type="button" id="deductModalCopyAddr" class="btn btn-success" style="display: none;" onclick='irx.deductModal.copyAddr();'>同戶籍地址</button>
+                                            &nbsp;
+                                            <button type="button" id="deductModalCopyComuAddr" class="btn btn-success" style="display: none;" onclick='irx.deductModal.copyComuAddr();'>同通訊地址</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " id="deductModalFlgNotproveDiv" style="display: none;">
+                                    <div class="  col-md-12 ">
+                                        <div class="form-group">
+                                            醫藥和生育費用，以給付與公立醫院、全民健康保險特約醫院及診所或經財政部認定其會計紀錄完備正確的醫院為限，
+                                            <br /> 請以上方「實際發生金額」減除退費、受領保險給付及非屬醫療性質(例：醫學美容) 部分後之餘額填列「可扣除金額」。
+                                            <br />
+                                            <input type="checkbox" id="deductModal_irc05_flgNotprove" tax-transform="yesNoCheckbox" value='Y'> 所列實際發生金額，含應另行檢附診斷證明書 (例：因牙病所為鑲牙、假牙製作及齒列矯正之醫療費用支出)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-red" id="deductModalMsgDisLossDiv" style="display: none;">
+                                    <div class="    col-md-12  ">
+                                        <div class="form-group">
+                                            如受有保險賠償或救濟金，請以上方之「實際發生金額」減除賠償或救濟金後之餘額填列「可扣除金額」</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="checkbox-inline margin" style=" margin-top: 13px; ">
+                                <label>
+                                    <input type="checkbox" name="optionsYears">新增後清除表單資料
+                                </label>
+                            </div>
+                            <button class="btn btn-success">新增</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            中華民國感謝您的付出
+        </div>
+        <strong>Copyright &copy; 2016
+            <a href="#">財政部財政資訊中心</a>.</strong> 版權所有
+    </footer>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>
