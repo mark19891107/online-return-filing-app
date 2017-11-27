@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>綜合所得稅電子結算申報繳稅系統</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="../dist/css/skins/skin-black-light.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <style type="text/css">
+        .box-header {
+            text-align: center;
+        }
+
+        .box.box-solid>.box-body {
+            color: #444;
+            background: #d2d6de;
+            background-color: #d2d6de;
+        }
+
+        .box.box-solid.box-default>.box-header {
+            color: #000;
+            background: #fff;
+            background-color: #fff;
+        }
+
+        .box-header .box-title {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        hr {
+            height: 1px;
+            background-color: #808080;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .flow-btn button {
+            width: 100px;
+        }
+    </style>
+    <style>
+        .two-row {
+            padding: 2px 10px;
+            text-align: center;
+        }
+
+        .one-row {
+            padding: 14px;
+        }
+
+        .strong {
+            font-weight: 700;
+            color: #0066FF;
+        }
+    </style>
+</head>
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    <div class="wrapper">
+
+
+
+        <header class="main-header">
+            <a href="" class="logo">
+                <span class="logo-mini">報稅</span>
+                <span class="logo-lg">綜合所得稅申報</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-gear"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-save"></i> 存檔
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-edit"></i> 修改密碼
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-book"></i> 操作手冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-sign-out"></i> 登出
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <span class="pull-right">
+                        <div class="two-row strong">應繳（退）稅額</div>
+                        <div class="two-row">10,000,000,000,000</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">最佳計算式</div>
+                        <div class="two-row">第三式</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">扣除額免稅額</div>
+                        <div class="two-row">1,000</div>
+                    </span>
+
+                    <span class="pull-right">
+                        <div class="two-row strong">所得總額</div>
+                        <div class="two-row">1,000</div>
+                    </span>
+
+
+                </div>
+            </nav>
+        </header>
+
+
+
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">報稅流程</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟一、填寫基本資料</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/填寫基本資料/本人及配偶.html">1. 本人及配偶
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫基本資料/撫養親屬.html">2. 扶養親屬
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/填寫所得/填寫所得.html">
+                            <i class="fa fa-link"></i>
+                            <span>步驟二、填寫所得</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right" style=" visibility: hidden; "></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟三、填寫扣除額、扣抵稅額</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/填寫扣除額/一般扣除額.html">1. 一般扣除額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/特別扣除額.html">2. 特別扣除額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/投資抵減稅額.html">3. 投資抵減稅額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/重購自用住宅.html">4. 重購自用住宅
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/填寫扣除額/大陸地區所得扣抵.html">5. 大陸地區所得扣抵
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="/填寫基本稅額/填寫基本稅額.html">
+                            <i class="fa fa-link"></i>
+                            <span>步驟四、填寫基本稅額</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right" style=" visibility: hidden; "></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟五、稅額計算</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                                <small class="label pull-right bg-green">完成</small>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="/稅額計算/應納稅額.html">1. 應納稅額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/稅額計算/基本稅額.html">2. 基本稅額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/稅額計算/應繳退稅額.html">3. 應繳（退）稅額
+                                    <small class="label pull-right bg-green">完成</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview menu-open active">
+                        <a href="#">
+                            <i class="fa fa-link"></i>
+                            <span>步驟六、申報上傳</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu" style="display: block;">
+                            <li class="active">
+                                <a href="/申報上傳/繳退稅.html">1. 繳（退）稅</a>
+                            </li>
+                            <li>
+                                <a href="/申報上傳/上傳及列印.html">2. 上傳及列印</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+
+
+
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>
+                    繳(退)稅<small></small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>申報上傳</a>
+                    </li>
+                    <li class="active">繳(退)稅</li>
+                </ol>
+            </section>
+            <section class="content container-fluid">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <div class="">
+                            <h2 class="pull-left" style="margin: 6px">您本年度應自行繳納稅額：
+                                <u>$XXX</u>元</h2>
+                            <div class="pull-right box-tools">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="type">請選擇繳款方式</label>
+                                <div id="type">
+                                    <button type="button" class="btn btn-default">信用卡</button>
+                                    <button type="button" class="btn btn-default">活期(儲蓄)存款帳戶</button>
+                                    <button type="button" class="btn btn-default">委託取款轉帳繳稅</button>
+                                    <button type="button" class="btn btn-default">ATM</button>
+                                    <button type="button" class="btn btn-default">現金</button>
+                                    <button type="button" class="btn btn-default">票據</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="el1">存款人姓名/國民身分證統一編號</label>
+                                                <select class="form-control select2" aria-hidden="true" id="el1" tax-rule="dependTitle.稱謂">
+                                                    <option>請選擇</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="el2">日後有核定稅稅款，同意採取轉帳者，請按"輸入退稅帳號"鈕填寫</label>
+                                                <select class="form-control select2" aria-hidden="true" id="el2" tax-rule="dependTitle.稱謂">
+                                                    <option>請選擇</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="el2">請按下選取金融機構&nbsp;</label>
+                                        <button type="button" class="btn btn-warning" style="width: 125px;">選取金融機構</button>
+                                        <button type="button" class="btn btn-danger" style="width: 125px;">愛心叮嚀</button>
+                                        <button type="button" class="btn btn-info" style="width: 125px;">帶入上年度帳號</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="cate">金融機構類別</label>
+                                                    <select class="form-control select2" aria-hidden="true" id="el3" tax-rule="dependTitle.稱謂" readonly>
+                                                        <option>請選擇</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="cate">金融機構代號</label>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="el2">金融機構</label>
+                                                <input type="text" class="form-control" readonly/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="cate">帳號</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="cate">存款帳戶類別</label>
+                                                    <select class="form-control select2" aria-hidden="true" id="el3" tax-rule="dependTitle.稱謂">
+                                                        <option>請選擇</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="text-red" style="margin-bottom: 0px;">
+                                            (此帳號僅供匯入退稅款使用，非供繳稅)
+                                        </p>
+                                        <br>
+                                        <p class="text-red" style="margin-bottom: 0px;">
+                                            帳號請參照存摺(非金融卡號碼)
+                                        </p>
+                                        <p class="text-red" style="margin-bottom: 0px;">
+                                            帳號包含分行別、部、科目、編號及檢查碼，帳號不足請前補0
+                                        </p>
+                                        <p class="text-red" style="margin-bottom: 0px;">
+                                            稽徵機關於申報期間結束後，將進行扣款作業，請檢視存款餘額
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flow-btn">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-success">存檔</button>
+                        <a href="/填寫扣除額/一般扣除額.html">
+                            <button type="button" class="btn margin btn-primary">下一步</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            中華民國感謝您的付出
+        </div>
+        <strong>Copyright &copy; 2016
+            <a href="#">財政部財政資訊中心</a>.</strong> 版權所有
+    </footer>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>

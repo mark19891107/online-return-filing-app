@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>總和所得稅申報 - 網頁版</title>
+    <title>綜合所得稅電子結算申報繳稅系統</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
 <body class="hold-transition" style="background-color: #ecf0f5;">
     <div style="margin: 7% auto">
         <div class="register-logo">
-            <label>綜合所得稅申報系統</label>
+            <label>綜合所得稅電子結算申報繳稅系統</label>
             <p>系統環境檢查</p>
         </div>
 
@@ -46,12 +46,14 @@
                     <!-- /.box-header -->
                     <div class="box-body no-padding">
                         <table class="table table-striped">
-                            <tbody>
+                            <thead>
                                 <tr>
                                     <th>檢查項目</th>
                                     <th>檢查狀態</th>
                                     <th>是否通過</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>作業系統</td>
                                     <td>macOS Sierra 10.12.6</td>
@@ -62,9 +64,11 @@
 
                                 <tr>
                                     <td>瀏覽器</td>
-                                    <td><span> Google Chrome 61.0.3163.100 (正式版本) (64 位元)</span></td>
                                     <td>
-                                            <span class="text-red">未通過，請使用 macOS 之 Safari 瀏覽器</span>
+                                        <span> Google Chrome 61.0.3163.100 (正式版本) (64 位元)</span>
+                                    </td>
+                                    <td>
+                                        <span class="text-red">未通過，請使用 macOS 之 Safari 瀏覽器</span>
                                     </td>
                                 </tr>
 
@@ -72,7 +76,9 @@
                                     <td>健保卡元件</td>
                                     <td>未偵測</td>
                                     <td>
-                                        <span class="text-red">未通過，請 <a target="_blank" href="https://eservice.nhi.gov.tw/Personal1/System/Documents/new/readme3.htm">下載、安裝健保卡元件</a></span>
+                                        <span class="text-red">
+                                            <a target="_blank" href="https://eservice.nhi.gov.tw/Personal1/System/Documents/new/readme3.htm">請下載、安裝健保卡元件</a>
+                                        </span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -81,11 +87,11 @@
                     <!-- /.box-body -->
                 </div>
                 <div class="row text-center">
-                        <a href="/身份驗證.html">
-                            <button class="btn btn-primary">系統檢查完畢，前往身份驗證頁面</button>
-                        </a>
+                    <a href="/身份驗證.html">
+                        <button class="btn btn-primary">系統檢查完畢，前往身份驗證頁面</button>
+                    </a>
                 </div>
-                
+
             </div>
         </div>
     </div>

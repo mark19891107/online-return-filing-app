@@ -8,14 +8,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>總和所得稅申報 - 網頁版</title>
+  <title>綜合所得稅電子結算申報繳稅系統</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="../dist/css/skins/skin-black-light.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="../dist/css/skins/skin-black-light.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style>
     .two-row {
@@ -29,7 +29,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     .strong {
       font-weight: 700;
-      color: darkred
+      color: #0066FF;
+    }
+
+    .flow-btn button {
+      width: 100px;
     }
   </style>
 </head>
@@ -116,104 +120,109 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
     <aside class="main-sidebar">
-        <section class="sidebar">
-          <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">報稅流程</li>
-            <li class="treeview menu-open">
-              <a href="#">
-                <i class="fa fa-link"></i>
-                <span>步驟一、填寫基本資料</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu" style="display: block;">
-                <li class="active">
-                  <a href="/填寫基本資料/本人及配偶.html">1. 本人及配偶</a>
-                </li>
-                <li>
-                  <a href="/填寫基本資料/撫養親屬.html">2. 撫養親屬</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/填寫所得/填寫所得.html">
-                <i class="fa fa-link"></i>
-                <span>步驟二、填寫所得</span>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-link"></i>
-                <span>步驟三、填寫扣除額、扣抵稅額</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="/填寫扣除額/一般扣除額.html">1. 一般扣除額</a>
-                </li>
-                <li>
-                  <a href="/填寫扣除額/特別扣除額.html">2. 特別扣除額</a>
-                </li>
-                <li>
-                  <a href="/填寫扣除額/投資抵減稅額.html">3. 投資抵減稅額</a>
-                </li>
-                <li>
-                  <a href="/填寫扣除額/重購自用住宅.html">4. 重購自用住宅</a>
-                </li>
-                <li>
-                  <a href="/填寫扣除額/大陸地區所得扣抵.html">5. 大陸地區所得扣抵</a>
-                </li>
-              </ul>
-            </li>
-            <li class="">
-              <a href="/填寫基本稅額/填寫基本稅額.html">
-                <i class="fa fa-link"></i>
-                <span>步驟四、填寫基本稅額</span>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-link"></i>
-                <span>步驟五、稅額計算</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="/稅額計算/應納稅額.html">1. 應納稅額</a>
-                </li>
-                <li>
-                  <a href="/稅額計算/基本稅額.html">2. 基本稅額</a>
-                </li>
-                <li>
-                  <a href="/稅額計算/應繳退稅額.html">3. 應繳（退）稅額</a>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-link"></i>
-                <span>步驟六、申報上傳</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="/申報上傳/繳退稅.html">1. 繳（退）稅</a>
-                </li>
-                <li>
-                  <a href="/申報上傳/上傳及列印.html">2. 上傳及列印</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </aside>
+      <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">報稅流程</li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-link"></i>
+              <span>步驟一、填寫基本資料</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+                <small class="label pull-right bg-green">完成</small>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/填寫基本資料/本人及配偶.html">1. 本人及配偶
+                  <small class="label pull-right bg-green">完成</small>
+                </a>
+              </li>
+              <li>
+                <a href="/填寫基本資料/撫養親屬.html">2. 扶養親屬
+                  <small class="label pull-right bg-green">完成</small>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="/填寫所得/填寫所得.html">
+              <i class="fa fa-link"></i>
+              <span>步驟二、填寫所得</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-link"></i>
+              <span>步驟三、填寫扣除額、扣抵稅額</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/填寫扣除額/一般扣除額.html">1. 一般扣除額</a>
+              </li>
+              <li>
+                <a href="/填寫扣除額/特別扣除額.html">2. 特別扣除額</a>
+              </li>
+              <li>
+                <a href="/填寫扣除額/投資抵減稅額.html">3. 投資抵減稅額</a>
+              </li>
+              <li>
+                <a href="/填寫扣除額/重購自用住宅.html">4. 重購自用住宅</a>
+              </li>
+              <li>
+                <a href="/填寫扣除額/大陸地區所得扣抵.html">5. 大陸地區所得扣抵</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="/填寫基本稅額/填寫基本稅額.html">
+              <i class="fa fa-link"></i>
+              <span>步驟四、填寫基本稅額</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-link"></i>
+              <span>步驟五、稅額計算</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/稅額計算/應納稅額.html">1. 應納稅額</a>
+              </li>
+              <li>
+                <a href="/稅額計算/基本稅額.html">2. 基本稅額</a>
+              </li>
+              <li>
+                <a href="/稅額計算/應繳退稅額.html">3. 應繳（退）稅額</a>
+              </li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-link"></i>
+              <span>步驟六、申報上傳</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li>
+                <a href="/申報上傳/繳退稅.html">1. 繳（退）稅</a>
+              </li>
+              <li>
+                <a href="/申報上傳/上傳及列印.html">2. 上傳及列印</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </aside>
 
 
 
@@ -223,7 +232,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <section class="content-header">
         <h1>
           填寫所得
-          <small>填寫所得</small>
+          <small></small>
         </h1>
         <ol class="breadcrumb">
           <li>
@@ -233,44 +242,60 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </ol>
       </section>
       <section class="content container-fluid">
-        <div class="box">
+        <div class="box box-primary">
           <div class="box-header with-border">
             <div class="">
-              <h2 class="box-title" style="margin:6px">
-                填寫所得
-              </h2>
+              <div class="pull-left box-tools">
+                <h2 class="box-title" style="margin:6px">
+                  填寫所得
+                </h2>
+                <button type="button" class="btn btn-default btn-sm" style="margin: 0px 10px;">
+                  <i class="fa fa-download"></i> 載入扶養親屬所得資料、扣除額資料
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                  <i class="fa fa-print"></i> 列印下載所得、扣除額參考清單
+                </button>
+              </div>
               <div class="pull-right box-tools">
                 <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-default">
                   新增所得資料
                 </button>
               </div>
             </div>
-
-
           </div>
 
           <div class="box-body">
             <div class="row">
               <div class="col-md-12">
                 <table class="table table-striped">
-                  <tbody>
+                  <thead>
                     <tr>
                       <th>所得種類</th>
                       <th>所得格式</th>
                       <th>所得人姓名</th>
-                      <th>所⁠得⁠發⁠生處⁠所⁠名⁠稱</th>
+                      <th width="80px">所⁠得⁠發⁠生處⁠所⁠名⁠稱</th>
                       <th width="80px">扣⁠繳⁠單⁠位統⁠一⁠編⁠號</th>
+                      <th>收入總額</th>
+                      <th>必要費用及成本</th>
                       <th>所得總額</th>
                       <th>扣繳稅額</th>
                       <th width="90px">操作</th>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>薪資所得</td>
                       <td>50 扣免繳薪資所得</td>
                       <td>王小明</td>
-                      <td>中華民國行政院</td>
+                      <td>財政資訊中心</td>
                       <td>
                         12345678
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        10,000
                       </td>
                       <td>
                         22,000
@@ -279,7 +304,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         0
                       </td>
                       <td>
-                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default">
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal-default-edit">
                           <i class="fa fa-edit"></i>
                         </button>
                         <button type="button" class="btn btn-danger  btn-sm">
@@ -291,32 +316,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>薪資所得</td>
                       <td>50 扣免繳薪資所得</td>
                       <td>王小明</td>
-                      <td>中華民國行政院</td>
+                      <td>財政資訊中心</td>
                       <td>
                         12345678
                       </td>
                       <td>
-                        22,000
+                        10,000
                       </td>
                       <td>
-                        0
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-default btn-sm">
-                          <i class="fa fa-edit"></i>
-                        </button>
-                        <button type="button" class="btn btn-danger  btn-sm">
-                          <i class="fa fa-trash-o"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>薪資所得</td>
-                      <td>50 扣免繳薪資所得</td>
-                      <td>王小明</td>
-                      <td>中華民國行政院</td>
-                      <td>
-                        12345678
+                        10,000
                       </td>
                       <td>
                         22,000
@@ -337,9 +345,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>薪資所得</td>
                       <td>50 扣免繳薪資所得</td>
                       <td>王小明</td>
-                      <td>中華民國行政院</td>
+                      <td>財政資訊中心</td>
                       <td>
                         12345678
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        10,000
                       </td>
                       <td>
                         22,000
@@ -360,9 +374,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>薪資所得</td>
                       <td>50 扣免繳薪資所得</td>
                       <td>王小明</td>
-                      <td>中華民國行政院</td>
+                      <td>財政資訊中心</td>
                       <td>
                         12345678
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        10,000
                       </td>
                       <td>
                         22,000
@@ -383,9 +403,44 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <td>薪資所得</td>
                       <td>50 扣免繳薪資所得</td>
                       <td>王小明</td>
-                      <td>中華民國行政院</td>
+                      <td>財政資訊中心</td>
                       <td>
                         12345678
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        22,000
+                      </td>
+                      <td>
+                        0
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-default btn-sm">
+                          <i class="fa fa-edit"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger  btn-sm">
+                          <i class="fa fa-trash-o"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>薪資所得</td>
+                      <td>50 扣免繳薪資所得</td>
+                      <td>王小明</td>
+                      <td>財政資訊中心</td>
+                      <td>
+                        12345678
+                      </td>
+                      <td>
+                        10,000
+                      </td>
+                      <td>
+                        10,000
                       </td>
                       <td>
                         22,000
@@ -405,7 +460,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                   </tbody>
                 </table>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-12">
                     <button type="button" class="btn margin btn-default">
                       <i class="fa fa-download"></i>
@@ -416,7 +471,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       列印下載所得、扣除額參考清單
                     </button>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -424,11 +479,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 
-        <div class="row">
+        <div class="row flow-btn">
           <div class="col-md-12">
             <button type="button" class="btn btn-success">存檔</button>
             <a href="/填寫扣除額/一般扣除額.html">
-              <button type="button" class="btn margin btn-primary">進入下一步</button>
+              <button type="button" class="btn margin btn-primary">下一步</button>
             </a>
           </div>
         </div>
@@ -446,64 +501,59 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div>
           <div class="modal-body">
             <div class="box-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>所得種類</label>
-                    <select class="form-control select2" style="width: 100%;" aria-hidden="true">
-                      <option>薪資所得</option>
-                      <option>薪資所得</option>
-                      <option>薪資所得</option>
-                    </select>
+              <form>
+                <div class="form-group">
+                  <label for="cate">所得種類</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>薪資所得</option>
+                    <option>薪資所得</option>
+                    <option>薪資所得</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所得格式</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>50 扣免繳薪資所得</option>
+                    <option>50 扣免繳薪資所得</option>
+                    <option>50 扣免繳薪資所得</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所得人姓名</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>王小明</option>
+                    <option>王先生</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所發生處所名稱</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="財政資訊中心">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="cate">扣繳單位統一編號</label>
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>所得格式</label>
-                    <select class="form-control select2" style="width: 100%;" aria-hidden="true">
-                      <option>50 扣免繳薪資所得</option>
-                      <option>50 扣免繳薪資所得</option>
-                      <option>50 扣免繳薪資所得</option>
-                    </select>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="cate">所得總額</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="cate">扣繳稅額</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label>所得人姓名</label>
-                    <select class="form-control select2" style="width: 100%;" aria-hidden="true">
-                      <option>王小明</option>
-                      <option>王先生</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">所發生處所名稱</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="中華民國行政院">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">扣繳單位統一編號</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="12345678">
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">所得總額</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="22,000">
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">扣繳稅額</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0">
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class="modal-footer">
@@ -520,6 +570,85 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- /.modal-dialog -->
     </div>
 
+    <div class="modal fade" id="modal-default-edit">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">修改所得資料</h4>
+          </div>
+          <div class="modal-body">
+            <div class="box-body">
+              <form>
+                <div class="form-group">
+                  <label for="cate">所得種類</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>薪資所得</option>
+                    <option>薪資所得</option>
+                    <option>薪資所得</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所得格式</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>50 扣免繳薪資所得</option>
+                    <option>50 扣免繳薪資所得</option>
+                    <option>50 扣免繳薪資所得</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所得人姓名</label>
+                  <select class="form-control select2" style="width: 100%;" aria-hidden="true">
+                    <option>王小明</option>
+                    <option>王先生</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cate">所發生處所名稱</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="財政資訊中心">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="cate">扣繳單位統一編號</label>
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="cate">所得總額</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="cate">扣繳稅額</label>
+                        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="12345678">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <div class="checkbox-inline margin" style=" margin-top: 13px; ">
+              <label>
+                <input type="checkbox" name="optionsYears">新增後清除表單資料
+              </label>
+            </div>--->
+            <button class="btn btn-success">儲存</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
     <footer class="main-footer">
       <div class="pull-right hidden-xs">
         中華民國感謝您的付出
