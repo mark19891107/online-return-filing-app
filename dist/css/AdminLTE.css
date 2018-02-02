@@ -1,7 +1,7 @@
 /*!
  *   AdminLTE v2.4.0
  *   Author: Almsaeed Studio
- *	 Website: Almsaeed Studio <https://adminlte.io>
+ *   Website: Almsaeed Studio <https://adminlte.io>
  *   License: Open source - MIT
  *           Please visit http://opensource.org/licenses/MIT for more information
  */
@@ -2369,7 +2369,8 @@ a:focus {
 .btn-success:hover,
 .btn-success:active,
 .btn-success.hover {
-  background-color: #4A9FAC;
+  background-color: #4AA9AC;
+  border-color: #4AA9AC;
 }
 .btn-info {
   background-color: #07889B;
@@ -2379,6 +2380,7 @@ a:focus {
 .btn-info:active,
 .btn-info.hover {
   background-color: #077487;
+  border-color: #077487;
 }
 .btn-danger {
   background-color: #DF744A;
@@ -2388,6 +2390,7 @@ a:focus {
 .btn-danger:active,
 .btn-danger.hover {
   background-color: #CB744A;
+  border-color: #CB744A;
 }
 .btn-warning {
   background-color: #F7B733;
@@ -2397,6 +2400,7 @@ a:focus {
 .btn-warning:active,
 .btn-warning.hover {
   background-color: #EDA333;
+  border-color: #EDA333;
 }
 .btn-outline {
   border: 1px solid #fff;
