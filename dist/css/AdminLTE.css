@@ -2368,6 +2368,7 @@ a:focus {
 }
 .btn-success:hover,
 .btn-success:active,
+.btn-success:focus,
 .btn-success.hover {
   background-color: #4AA9AC;
   border-color: #4AA9AC;
@@ -2378,6 +2379,7 @@ a:focus {
 }
 .btn-info:hover,
 .btn-info:active,
+.btn-info:focus,
 .btn-info.hover {
   background-color: #077487;
   border-color: #077487;
@@ -2388,6 +2390,7 @@ a:focus {
 }
 .btn-danger:hover,
 .btn-danger:active,
+.btn-danger:focus,
 .btn-danger.hover {
   background-color: #CB744A;
   border-color: #CB744A;
@@ -2398,6 +2401,7 @@ a:focus {
 }
 .btn-warning:hover,
 .btn-warning:active,
+.btn-warning:focus,
 .btn-warning.hover {
   background-color: #EDA333;
   border-color: #EDA333;
