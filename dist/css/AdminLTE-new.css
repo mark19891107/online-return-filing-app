@@ -2359,8 +2359,10 @@ a:focus {
 }
 .btn-primary:hover,
 .btn-primary:active,
+.btn-primary:focus,
 .btn-primary.hover {
   background-color: #077487;
+  border-color: #077487;
 }
 .btn-success {
   background-color: #4ABDAC;
